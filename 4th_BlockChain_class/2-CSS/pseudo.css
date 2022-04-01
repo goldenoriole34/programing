@@ -1,0 +1,57 @@
+/* div:hover {
+    background-color: purple;
+} */
+
+
+input:focus {
+    background-color: purple;
+}
+
+/* input[type=text]:disabled {
+    background-color: lightgray;
+    color: black;
+} */
+
+input[type=text]:enabled {
+    background-color: blueviolet;
+    color: white;
+}
+
+input:checked {
+    width: 50px;
+    height: 50px;
+}
+
+/* .container p:first-child {
+    color: red;
+}
+
+.container p:last-child {
+    color: green;
+}
+
+.container p:nth-child(2) {
+    color: blue;
+} */
+
+.p1::after{
+    content: "!";
+}
+
+.p1::before{
+    content: "some";
+}
+
+.p1::first-letter{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.p1::first-line{
+    color: red;
+}
+
+.p1::selection{
+    color: violet;
+}
+

@@ -1,0 +1,17 @@
+.flex-container {
+    display: flex;
+    height: 600px;
+    align-items: center;
+    align-content: flex-end;
+    background-color: dodgerblue;
+}
+
+.flex-container > div {
+    background-color: lightgrey;
+    margin: 10px;
+    width: 100px;
+    line-height: 75px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}

@@ -1,0 +1,21 @@
+#rgbid {
+    background-color: rgb(255, 99, 71);
+}
+
+#hexid {
+    background-color: #ff6347;
+}
+
+#hslid{
+    background-color: hsl(9, 100%, 64%);
+}
+
+#rgbaid {
+    background-color: rgba(255,99,71,0.3);
+}
+
+#hslaid {
+    background-color: hsl(9, 100%, 64%, 0.5);
+
+}
+

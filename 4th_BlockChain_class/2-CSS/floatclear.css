@@ -1,0 +1,11 @@
+.img1 {
+    float: right;
+}
+
+.img2 {
+    float: left;
+}
+
+.clearfix {
+    overflow: auto;
+}

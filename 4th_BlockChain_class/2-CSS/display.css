@@ -1,0 +1,16 @@
+h1.hidden {
+    visibility: hidden;
+}
+
+p.ext {
+    display: inline-block;
+}
+
+li {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
+    background-color: aqua;
+}

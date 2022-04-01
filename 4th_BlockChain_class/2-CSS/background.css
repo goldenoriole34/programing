@@ -1,0 +1,17 @@
+body {
+background-image: url(/RESORCE/korea.png);
+background-repeat: no-repeat;
+background-size: 1024px;
+}
+
+div.first {
+    opacity: 0.1;
+}
+
+div.second {
+    opacity: 0.3;
+}
+
+div.third {
+    opacity: 0.6;
+}

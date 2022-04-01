@@ -1,0 +1,35 @@
+h2 {
+    font-size: 50px;
+}
+
+.p1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+.p2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.p3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.googlefont {
+    font-family: "Sofia", sans-serif;
+}
+
+.normal{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+}
+.italic{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+.oblique{
+    font-style: oblique;
+    font-weight: 1000;
+    font-size: 40px;
+
+}
+
