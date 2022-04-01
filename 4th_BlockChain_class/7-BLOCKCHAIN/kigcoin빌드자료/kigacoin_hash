@@ -1,0 +1,42 @@
+[mainnet]
+python2 genesis.py -a scrypt -z "KGA Blockchain Class 4th Start At 18/Oct/2021" -t 1617604141
+04ffff001d01042d4b474120426c6f636b636861696e20436c617373203474682053746172742041742031382f4f63742f32303231
+algorithm: scrypt
+merkle hash: 17fc12152daf402bd67a3bbee1895f997537b38d0dc3d6478d07d0f665b30c33
+pszTimestamp: KGA Blockchain Class 4th Start At 18/Oct/2021
+pubkey: 04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f
+time: 1617604141
+bits: 0x1e0ffff0
+Searching for genesis hash..
+3443.0 hash/s, estimate: 346.5 hgenesis hash found!
+nonce: 1214009
+genesis hash: de0bc9e62461efb7cb25b3dfadef8e3b9d032872b04d99bf121793691774161d
+
+[testnet]
+python2 genesis.py -a scrypt -z "KGA Blockchain Class 4th Start At 18/Oct/2021" -t 1645587173
+04ffff001d01042d4b474120426c6f636b636861696e20436c617373203474682053746172742041742031382f4f63742f32303231
+algorithm: scrypt
+merkle hash: 17fc12152daf402bd67a3bbee1895f997537b38d0dc3d6478d07d0f665b30c33
+pszTimestamp: KGA Blockchain Class 4th Start At 18/Oct/2021
+pubkey: 04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f
+time: 1645587173
+bits: 0x1e0ffff0
+Searching for genesis hash..
+3428.0 hash/s, estimate: 348.0 hgenesis hash found!
+nonce: 2572211
+genesis hash: 13f611d597e568ed379a03bd7d8b3f7b3be0677875c5abf7c02d3e903963cf6f
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
