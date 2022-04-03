@@ -1,0 +1,2 @@
+let age;
+alert(age);

@@ -1,15 +1,3 @@
-
-브라우저에 내장 된 '자바스크립트 가상머신' 엔진 종류
-
-    V8 – Chrome, Opera
-
-    SpiderMonkey – Firefox
-
-    IE - (버전에 따라) Trident’ 혹은 'Chakra’
-        'ChakraCore’는 Microsoft Edge에
-        'SquirrelFish’는 Safari에 사용 됨
-
-
 엔진 동작 기본 원리
     1. 엔진(브라우저라면 내장 엔진)이 스크립트를 읽습니다(파싱).
     2. 읽어 들인 스크립트를 기계어로 전환합니다(컴파일).

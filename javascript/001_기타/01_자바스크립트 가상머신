@@ -1,0 +1,10 @@
+
+브라우저에 내장 된 '자바스크립트 가상머신' 엔진 종류
+
+    V8 – Chrome, Opera
+
+    SpiderMonkey – Firefox
+
+    IE - (버전에 따라) Trident’ 혹은 'Chakra’
+        'ChakraCore’는 Microsoft Edge에
+        'SquirrelFish’는 Safari에 사용 됨
