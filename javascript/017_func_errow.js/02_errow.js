@@ -1,1 +1,0 @@
-ask(question, yes, no)
