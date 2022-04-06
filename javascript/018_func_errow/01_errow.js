@@ -4,7 +4,7 @@
 
 //(1)
 let sum = function(a, b) {
-    return a + b;
+  return a + b;
 }
 
 //(2)
@@ -16,7 +16,7 @@ let sum2 = (a, b) => a + b;
 let age = prompt("나이를 알려주세요", 18);
 
 let welcome = (age < 18) ?
-    ()=> alert("안녕") :
-    ()=> alert("안녕하세요!");
+  ()=> alert("안녕") :
+  ()=> alert("안녕하세요!");
 
 welcome();
