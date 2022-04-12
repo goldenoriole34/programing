@@ -14,8 +14,8 @@
       const h1 = document.createElement('h1')
       const h2 = document.createElement('h2')
 
-      const txt = 'hello world';
-      let timeTxt = `It is ${ new Date().toLocaleTimeString() }.`
+      const txt = 'What time is it?';
+      let timeTxt = `The time is ${ new Date().toLocaleTimeString() }`
 
       h1.innerHTML = txt
       h2.innerHTML = timeTxt
@@ -25,7 +25,8 @@
 
       document.querySelector('#root').innerHTML = div.innerHTML
     }
-    setTimeout(time,1000)
+    setInterval(time,1000)
+    
   </script>
 </body>
 </html>
