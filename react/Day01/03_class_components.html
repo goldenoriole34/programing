@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body>
+  <div id="root">
+
+  </div>
+
+  <!-- js에서 버튼을 만드는 방법 -->
+    <!-- <button>버튼</button> -->
+
+  <!-- 리액트로 버튼을 만드는 방법(원리) -->
+  <script type="text/babel">
+    //React-dom.render()
+    //첫번째 인자값 : 내가 넣을 내용
+    //두번재 인자값 : 내가 넣을 위치 => document.querySelector('#root')
+    
+    //인자 값이 3개 들어감
+      //(1) 엘리먼트 명 => a, button, input, li 등등
+      //(2) 속성값(object) => <input type="text">
+      //(3) innerHTML 내용물 => <span>하이</span>
+
+      // const btn = React.createElement(('button', { id : 'ingoo', class : 'ingoo2'}, '버튼'))
+
+      const id = 'ingoo2'
+      const btn = <button id={id}>버튼</button>
+
+      class App extends React.Component{
+        render(){
+          return (
+            <button>클래스 컴포넌트 버튼</button>
+          )
+        }
+      }
+
+      ReactDOM.render(
+        <App />
+        ,document.querySelector('#root')
+      )
+
+
+  </script>
+</body>
+</html>

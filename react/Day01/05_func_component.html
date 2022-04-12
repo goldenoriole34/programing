@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+
+    const Content = () => {
+      return(
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+        </tr>
+      )
+    }
+
+    const Subject = () => {
+      return(
+        <tr>
+          <th>번호</th>
+          <th>제목</th>
+          <th>작성자</th>
+          <th>작성일</th>
+          <th>조회수</th>
+        </tr>
+      )
+    }
+
+    const Table = () => {
+      return(
+        <table>
+          <thead>
+            <Subject />
+          </thead>
+          <tbody>
+            <Content />
+            <Content />
+            <Content />
+            <Content />
+            <Content />
+          </tbody>
+        </table>
+      )
+    }
+
+    class App extends React.Component{
+      render(){
+        return(
+          <Table />
+        )
+      }
+    }
+
+    ReactDOM.render(<App />, document.querySelector('#root'))
+    
+  </script>
+</body>
+</html>
