@@ -1,0 +1,38 @@
+CRA를 사용하지 않을때 가장 먼저 해야하는 작업 (튜토리얼)
+  1. index.html 생성하여 head에 react / reactDOM / babel 링크 추가
+  2. root라는 id를 가진 Element를 생성
+  3. 스크립트 타입 babel 추가
+  4. 최소한으로 있어야 할 App 베이직 컴포넌트 생성
+    ㄴ참고) babel은 컴포넌트의 첫글자를 대문자를 사용하여 일반 element와 차별을 주었다.
+  5. reactDOM 통해 App 컴포넌트, 위치 지정하여 랜더
+
+
+리액트의 핵심
+  데이터가 바뀌면 화면(을 구성하는 컴포넌트)을 재랜더링 함
+  그것을 위해 리액트에는 Props와 State가 있다.
+
+
+Props와 State
+  둘의 활용 용도는 비슷함
+
+   생성자(constructor)를 활용한 Value 속성 값 넘기기
+  ㄴ 자식 컴포넌트는 value를 통해 부모 컴포넌트에 값을 넘길 수 있음
+  ㄴ 여기서의 value는 input를 의미하는 것이 아닌, 속성의 이름을 말한다.
+    ㄴ 예제) 부모 컴포넌트의 value는 html
+    ㄴ 예제) 자식 컴포넌트의 value는 속성 값
+
+  Class의 생성자(constructor)와 props
+  ㄴ 부모 컴포넌트에 constructor(props){supet(props)} 를 주면 자식 컴포넌트의 속성 값을 가져올 수 있다.
+  ㄴ 최근에는 생략 가능해졌다.
+
+    참고
+    <input type="text"/> 와 <Input value={1} />의 표현식 차이
+    ㄴ ""와 {}
+    ㄴ jsx 문법과 겹치지 않게 하기 위해 차이를 둔 것임
+    ㄴ 컴포넌트 여부에 따라 다름 ( 컴포넌트에서는 변수를 담는 Props 값이기 때문)
+    ㄴ 속성값을 읽는 것이 바로 props인 것이다.
+      ㄴ 단점으로는 부모 컴포넌트가 중첩될수록 props 전달하는 과정이 번거로워져 이를 개선하기 위해 Redux가 나옴
+
+    Class의 props를 전달하는 방법
+    ㄴ 4개의 컴포넌트를 이용해 값을 이동시켜기 예제
+    

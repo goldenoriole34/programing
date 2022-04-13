@@ -12,10 +12,38 @@
 <body>
   <div id="root"></div>
   <script type="text/babel">
+
+    class C extends React.Component {
+      render(){
+        return(
+          <span>Hello!</span>
+        )
+      }
+    }
+
+    class B extends React.Component {
+      render(){
+        return(
+          <div className=""><C /></div>
+        )
+      }
+    }
+
+    class A extends React.Component {
+      render(){
+        return(
+          <B />
+        )
+      }
+    }
+
+
     class App extends React.Component {
       render(){
         return(
-          <div></div>
+          <div>
+            <A />
+          </div>
         )
       }
     }
