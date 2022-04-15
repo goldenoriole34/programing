@@ -15,24 +15,32 @@
 
     class C extends React.Component {
       render(){
+        const { text } = this.props
         return(
-          <span>Hello!</span>
+          <span>Hello World { text }</span>
         )
       }
     }
 
     class B extends React.Component {
       render(){
-        return(
-          <div className=""><C /></div>
+        const { value } = this.props //js영역
+        return( //jsx영역
+
+          <div className="c_Component"> 
+            <C text={value} />
+          </div>
         )
       }
     }
 
     class A extends React.Component {
       render(){
+        const { name } = this.props
         return(
-          <B />
+          <div>
+            <B value={name}/>
+          </div>
         )
       }
     }
@@ -42,7 +50,7 @@
       render(){
         return(
           <div>
-            <A />
+            <A name={"heidi"} />
           </div>
         )
       }
