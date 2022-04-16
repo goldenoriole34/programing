@@ -16,8 +16,8 @@
       render(){
         return(
           <div>
-            <A />
-            <B />
+            <A name = {"heidi_A"}/>
+            <B name = {"heidi_B"}/>
           </div>
         )
       }
@@ -25,35 +25,38 @@
 
     class A extends React.Component {
       render(){
+        const { name } = this.props
         return(
-          <div></div>
+          <C nameA = {name} />
         )
       }
     }
+        class C extends React.Component {
+          render(){
+            const { nameA } = this.props
+            return(
+              <div className ="Component_C">{ nameA }</div>
+            )
+          }
+        }
 
     class B extends React.Component {
       render(){
+        const { name } = this.props
         return(
-          <div></div>
+          <D nameB = { name } />
         )
       }
     }
+        class D extends React.Component {
+          render(){
+            const { nameB } = this.props
+            return(
+              <div className ="Component_D">{ nameB }</div>
+            )
+          }
+        }
 
-    class C extends React.Component {
-      render(){
-        return(
-          <div></div>
-        )
-      }
-    }
-
-    class D extends React.Component {
-      render(){
-        return(
-          <div></div>
-        )
-      }
-    }
     ReactDOM.render(<App />, document.querySelector("#root"));
   </script>
 </body>

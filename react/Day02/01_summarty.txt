@@ -41,6 +41,6 @@ Props와 State
     
   props는 부모로부터 자식에게 속성을 전달하는 방식이다.
   ㄴ 넘기는 속성값의 이름은 value가 아닌 다른 것으로도 전달이 가능하다.
-  ㄴ render 부분의 js영역과 return의 jsx영역을 구분하는 것이 중요하다.
+  ㄴ render 부분의 js영역의 {}객체와 return의 jsx영역의 {}변수 기호를 구분하는 것이 중요하다.
   
 
