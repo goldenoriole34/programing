@@ -18,19 +18,19 @@
         number : 0,
       }
 
-      increase = () => {
+      increase = (index) => {
         const increase = {
           ...this.state,
-          number : this.state.number +1
+          number : this.state.number +index
         }
 
         this.setState(increase)
       }
 
-      decrease = () => {
+      decrease = (index) => {
         const decrease = {
           ...this.state,
-          number : this.state.number -1
+          number : this.state.number -index
         }
         this.setState(decrease)
       }
@@ -44,8 +44,8 @@
         return(
           <div>
             <h3>{this.state.number}</h3>
-            <button onClick={ this.increase }>+</button>
-            <button onClick={ this.decrease }>-</button>
+            <button onClick={ ()=> {this.increase(2)} }>+</button>
+            <button onClick={ ()=> {this.decrease(2)} }>-</button>
           </div>
         )
       }
