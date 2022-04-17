@@ -17,22 +17,35 @@
       state = {
         number : 0,
       }
-      render(){
+
+      increase = () => {
         const increase = {
           ...this.state,
           number : this.state.number +1
         }
 
+        this.setState(increase)
+      }
+
+      decrease = () => {
         const decrease = {
           ...this.state,
           number : this.state.number -1
         }
+        this.setState(decrease)
+      }
+
+
+
+
+      render(){
+ 
 
         return(
           <div>
             <h3>{this.state.number}</h3>
-            <button onClick={ () => { this.setState(increase) } }>+</button>
-            <button onClick={ () => { this.setState(decrease) } }>-</button>
+            <button onClick={ this.increase }>+</button>
+            <button onClick={ this.decrease }>-</button>
           </div>
         )
       }
