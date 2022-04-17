@@ -28,35 +28,52 @@
       render(){
         const { name } = this.props
         return(
-          <C nameA = {name} />
+          <div className = "Component_A">
+            <C value = { name } />
+          </div>
         )
       }
     }
-        class C extends React.Component {
-          render(){
-            const { nameA } = this.props
-            return(
-              <div className ="Component_C">{ nameA }</div>
-            )
-          }
+
+      class C extends React.Component {
+        render(){
+          const { value } = this.props
+          return(
+            <div className = "Component_C">{ value }</div>
+          )
         }
+      }
 
     class B extends React.Component {
       render(){
         const { name } = this.props
         return(
-          <D nameB = { name } />
+          <div className = "Component_B">
+            <D1 value = { name }/>
+            <D2 value = { name }/>
+          </div>
         )
       }
     }
-        class D extends React.Component {
-          render(){
-            const { nameB } = this.props
-            return(
-              <div className ="Component_D">{ nameB }</div>
-            )
-          }
+
+      class D1 extends React.Component {
+        render(){
+          const { value } = this.props
+          return(
+            <div className = "Component_D1">{ value }</div>
+          )
         }
+      }
+      class D2 extends React.Component {
+        render(){
+          const { value } = this.props
+          return(
+            <div className = "Component_D2">{ value }</div>
+          )
+        }
+      }
+
+
 
     ReactDOM.render(<App />, document.querySelector("#root"));
   </script>
