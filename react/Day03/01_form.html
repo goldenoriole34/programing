@@ -13,52 +13,46 @@
   <div id="root"></div>
   <script type="text/babel">
 
-    class Counter extends React.Component {
+    class Form extends React.Component{
       state = {
-        number : 0,
+        value : "",
       }
 
-      increase = (index) => {
-        const increase = {
-          ...this.state,
-          number : this.state.number +index
-        }
-
-        this.setState(increase)
-      }
-
-      decrease = (index) => {
-        const decrease = {
-          ...this.state,
-          number : this.state.number -index
-        }
-        this.setState(decrease)
+      handleChange = (e) => {
+        console.log(e.target.value) //input박스에 있는 value를 가리킴
       }
 
       render(){
- 
-
         return(
-          <div>
-            <h3>{this.state.number}</h3>
-            <button onClick={ ()=> {this.increase(2)} }>+</button>
-            <button onClick={ ()=> {this.decrease(2)} }>-</button>
-          </div>
+          <form>
+            내용 : <input type="text" value={this.state.value} onChange={this.handleChange} />
+            <input type="submit" value="확인"/>
+          </form>
         )
       }
     }
-    
+
     class App extends React.Component {
       render(){
         return(
           <div>
-            <Counter />
+            <Form />
           </div>
         )
       }
     }
 
     ReactDOM.render(<App />, document.querySelector("#root"));
+  </script>
+
+  <input type="text" id="heidi" onchange="changeHandle" />
+  <script type="text/javascript">
+    const input = document.querySelector('#heidi')
+
+    const handleChange = (e) => {
+      console.log(e.target.value)
+    }
+    input.addEventListener('change', changeHandle)
   </script>
 </body>
 </html>
