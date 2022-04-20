@@ -10,7 +10,6 @@ let bricks = []
 let countAliveBrick = brickColumn * brickRow; //남아있는 벽돌의 갯수
 let inputBrick;
 
-
 // 볼 관련
 let outBoundR = canvas.width / 2 + 50
 let outBoundL = canvas.width / 2 - 50
