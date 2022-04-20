@@ -7,16 +7,6 @@ let randomNum = Math.random() * 7 + 3; //3 ~ 10 사이의 랜덤한 값(난수)�
 
 let gameNum = Math.round(randomNum);//반올림
 
-// let makeNum = function(){
-//   if(gameNum >= 3){
-//     console.log(gameNum);
-//   } else {
-//     gameNum += 3;
-//   }
-// }
-
-// makeNum();
-
 let inputNum = prompt("3 ~ 10 사이의 숫자를 입력하세요", "3");
 
 if(inputNum == gameNum) {
