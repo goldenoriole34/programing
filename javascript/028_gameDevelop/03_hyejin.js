@@ -1,23 +1,92 @@
-// 벽돌 배치 후 스페이스 바 누르면 공 발사 방향 결정
-
+// 맨 뒤에 있어야하는 친구
 var interval = setInterval( () => ( update ), 10);
+gameStart()
 
+//class는 객체의 설계도 역할
+//명사로 지칭되는 객체를 설계한다. 자동차, 책, 몬스터, 사람 등의 속성과 기능을 함께 지정
+class Brick { //명사
+  constructor(left, top, right, bottom, color) { //속성종류
+    this.left = left; //속성1
+    this.top = top; //속성2
+    this.right = right; //속성3
+    this.bottom = bottom; //속성4
+    this.color = color; //속성5
+    this.isAlive = true; //속성6 
+  }
+
+  //class 내 그리기 함수
+  draw() {
+    if(this.isAlive)
+    {
+      context.rect(this.left, this.top, brickWidth, brickHeight); 
+      context.fillStyle = this.color;
+      context.fill();
+    }
+  }
+}
+
+//움직이면서 사라지지 않는 방해블록
+class MovingBrick extends Brick {
+  draw() {
+    if(this.isAlive)
+    {
+      context.rect(this.left, this.top, brickWidth, brickHeight); 
+      context.fillStyle = this.color;
+      context.fill();
+    }
+  }
+
+  move() {
+    // movingBrick - canvas 접촉 시 방향전환
+    if(this.left <= 0)
+    {
+      movingBrickDirX = 1;
+    }
+    else if(this.right - 50 >= canvas.width)
+    {
+      movingBrickDirX = -1;
+    }
+    //movingBrick 이동설정 (속도)
+    this.left += movingBrickSpeed*movingBrickDirX;
+    this.right += movingBrickSpeed*movingBrickDirX; 
+  }
+
+  isCollisionRectToRect(rectA)
+  {  
+    if(rectA.left > this.right ||
+        rectA.right < this.left ||
+        rectA.top > this.bottom ||
+        rectA.bottom < this.top) 
+      {
+        return false;
+      }
+    return true;
+  }
+}
+
+// 캔버스 생성
 const canvas = document.getElementById('myCanvas'); 
 const context = canvas.getContext('2d');
 
-gameStart()
 
+// 게임 진행 관련
+let deadBrickCount = 0;
 
-// 벽돌 관련
+// 일반 벽돌 관련
 const brickWidth = 50 // 가로벽돌 간격 10
 const brickHeight = 25; // 세로 벽돌 간격 5
 var inputBrickColumn;
-let brickColumn = inputBrickColumn;  // 5행 세로로 
 var inputBrickRow;
+let brickColumn = inputBrickColumn;  // 5행 세로로 
 let brickRow = inputBrickRow ; // 5행 세로로 
 let bricks = []
 let countAliveBrick = brickColumn * brickRow; //남아있는 벽돌의 갯수
-let inputBrick;
+
+//방해 벽돌 관련
+let movingBrick;
+let movingBrickPosX = canvas.width / 2 - brickWidth
+let movingBrickDirX = -1
+let movingBrickSpeed = 3;
 
 // 패들 관련
 const barWidth = 100;
@@ -26,20 +95,17 @@ let barPosX = canvas.width / 2 - barWidth / 2;
 let barPosY = canvas.height - barHeight;
 let barMovSpeed = 10;
 
-let ballDirL ;
-
 let paddle = {
   left:0, right:0, top:0, bottom:0,
 }
 
 // 볼 관련
+let ballDirL ;
 let outBoundR = canvas.width / 2 + 50
 let outBoundL = canvas.width / 2 - 50
-
 const arcRadius = 20;
 let arcPosX = barPosX + barWidth / 2;  // 공의 초기값
 let arcPosY = 400 - 20 - arcRadius;
-
 let arcMovDirX = -1;
 let arcMovDirY = -1;
 let arcMovSpeed = 2.5;
@@ -52,7 +118,7 @@ let ball = {
 document.addEventListener('keydown', keyDownEventHandler);
 
 
-// 패들 좌우 컨트롤
+// 키보드 컨트롤
 function keyDownEventHandler(e)
 {
   if (e.key == 'ArrowRight')
@@ -81,9 +147,12 @@ function keyDownEventHandler(e)
   paddle.bottom = barPosY + barHeight;
 }
 
-//도형 움직임
+//동작 감지
 function update()
 {
+  // checkTowin();
+
+  // ball - canvas 접촉 시 방향전환
   if(arcPosX - arcRadius < 0)
   {
     arcMovDirX = 1;
@@ -93,6 +162,7 @@ function update()
     arcMovDirX = -1;
   }
 
+  // ball - pallde 접촉 시 방향전환
   if(arcPosY + arcRadius == canvas.height) {
     console.log('게임중지')
     gameOver();
@@ -105,46 +175,68 @@ function update()
   {
     arcMovDirY = -1;
   }
+  
+  //ball의 이동설정 (속도)
   arcPosX += arcMovDirX * arcMovSpeed;
   arcPosY += arcMovDirY * arcMovSpeed;
 
+  //ball이 충돌시 접촉부분 계산 (반지름을 빼주어야 더욱 자연스러움 안하면 반지름만큼 넘어가서 인식)
   ball.left = arcPosX - arcRadius;
   ball.right = arcPosX + arcRadius;
   ball.top = arcPosY - arcRadius;
   ball.bottom = arcPosY + arcRadius;
 
+  // ball - movingBrick 충돌체크
+  if (movingBrick.isCollisionRectToRect(ball))
+  {
+    arcMovDirY = arcMovDirY*(-1);
+    // if(){
+    //   arcPosY = movingBrick.top - arcRadius;
+
+    // }
+    // else if(){
+    //   arcPosY = movingBrick.top - arcRadius;
+
+    // }
+
+    //TODOLIST 충돌시 떨림 수정
+  }
+
+  // ball - paddle 충돌체크
   if (isCollisionRectToRect(ball, paddle))
   {
     arcMovDirY = -1;
     arcPosY = paddle.top - arcRadius;
   }
 
-  // 볼과 벽돌 충돌
+  // ball과 brick 충돌체크 
   for(let i = 0; i < brickRow; i++)
   {
     for(let j = 0; j < brickColumn; j++)
     {
-      if(bricks[i][j].isAlive && isCollisionRectToRect(ball, bricks[i][j]))  //살아있는 벽돌만 표시함
+      if(bricks[i][j].isAlive && isCollisionRectToRect(ball, bricks[i][j]))
+      //살아있는 벽돌만 표시함
       {
         // console.log("i : ", i, "j : ", j); // 충돌 확인
         bricks[i][j].isAlive = false;  //충돌하면 사라짐
-        countAliveBrick -= 1;
-        console.log('남아있는 벽돌 갯수 : ' + countAliveBrick);
+        countAliveBrick -= 1; //충돌할때마다 갯수차감
+        // console.log('남아있는 벽돌 갯수 : ' + countAliveBrick);
         
+        //남은 brcik이 없을때, 게임 클리어
         if( countAliveBrick == 0 ) {
           gameClear();
         }
-
         arcMovDirY = -arcMovDirY;
         arcMovDirX = -arcMovDirX;
+        break; //하나 충돌시 재로딩 될때까지는 break
       }
     }
   }
 }
 
+// ball과 paddle 충돌체크
 function isCollisionRectToRect(rectA, rectB)
 {
-
   if(rectA.left > rectB.right ||
       rectA.right < rectB.left ||
       rectA.top > rectB.bottom ||
@@ -155,91 +247,118 @@ function isCollisionRectToRect(rectA, rectB)
   return true;
 }
 
+// 사물 그리기
 function draw()
 {
-  context.clearRect(0, 0, canvas.width, canvas.height);
+  context.clearRect(0, 0, canvas.width, canvas.height); //초기화
   drawCanvas();
-
-  drawRect();
-  drawArc();
-  drawBricks();
+  drawRect(); //paddle
+  drawArc(); //ball
+  drawBricks(); //bricks
 }
 
+//Canvas 생성
 function drawCanvas()
 {
   context.beginPath();
   context.rect(0, 0, canvas.width, canvas.height);
-  context.fillStyle = "rgba(10, 10, 10, 0.1)";
+  context.fillStyle = "black";
   context.fill();
   context.closePath();
 }
 
+//ball 생성
 function drawArc() 
 { 
   context.beginPath(); 
-
   context.arc(arcPosX, arcPosY, arcRadius, 0, 2 * Math.PI); 
-
-  context.fillStyle = 'blue'; 
+  context.fillStyle = 'white'; 
   context.fill(); 
-
   context.closePath(); 
 }
 
+//paddle 생성
 function drawRect()
 {
   context.beginPath(); 
-
   context.rect(barPosX, barPosY, barWidth, barHeight); 
-  
-  context.fillStyle = 'red'; 
+  context.fillStyle = 'yellow'; 
   context.fill(); 
-  
   context.closePath(); 
 }
 
+//brick 생성상세
 function setBricks()
 {
-  for(let i = 0; i < brickRow; i++) //위에서 부터 4줄
+  //안사라지는 방해 블록 (100*20)
+  movingBrick = new MovingBrick (150,190,250,210,'white');
+
+  //사라질 수 있는 블록
+  bricks = []
+  for(let i = 0; i < brickRow; i++) //위에서 부터 n줄
   {
     bricks[i] = [];
-    for(let j = 0; j < brickColumn; j++) // 가로로 5개
+    for(let j = 0; j < brickColumn; j++) // 가로로 n줄
     {
-      bricks[i][j] = {
-        left:55 + j * (brickWidth + 10),
-        right:55 + j * (brickWidth + 10) + brickWidth,
-        top:30 + i * (brickHeight + 5),
-        bottom:30 + i * (brickHeight + 5) + brickHeight, //30 주는게 블럭이랑 간격크기 포함?
-        column:i, row:j,
-        isAlive:true
-      };
+      // bricks[i][j] = {
+      //   left: 55 + j * (brickWidth + 10),
+      //   right:55 + j * (brickWidth + 10) + brickWidth,
+      //   // right: this.left + 50,
+      //   top: 30 + i * (brickHeight + 5),
+      //   bottom: 30 + i * (brickHeight + 5) + brickHeight, //30 주는게 블럭이랑 간격크기 포함?
+      //   column: i, row: j,
+      //   isAlive:true
+      // };
+
+      bricks[i][j] = new Brick (55 + j * (brickWidth + 10),
+                                30 + i * (brickHeight + 5),
+                                55 + j * (brickWidth + 10) + brickWidth,
+                                30 + i * (brickHeight + 5) + brickHeight,
+                                'brown')                          
     }
   }
 }
 
+// let flatBricks = bricks.flat();
+// console.log(flatBricks)
+
+//brick 갯수 카운트 (미사용)
+function checkTowin(){
+  // 1. brick 배열에 있는 정보로 처리
+  let deadBricks = bricks.filter(brick => brick.isAlive == false);
+  if (deadBricks.length == brickRow * brickColumn) {
+  // 2. 카운트를 세는 변수를 만들어서 처리
+    alert('게임 클리어22');
+  }
+}
+
+//brick 그리기
 function drawBricks()
 {
-  context.beginPath();
-  for(let i = 0; i < brickRow; i++) //위에서 부터 4줄
+  for(let i = 0; i < brickRow; i++) //위에서 부터 n줄
   {
-    for(let j = 0; j < brickColumn; j++) // 가로로 5개
+    for(let j = 0; j < brickColumn; j++) // 가로로 n개
     {
-      if(bricks[i][j].isAlive)
-      {
-        context.rect(bricks[i][j].left, bricks[i][j].top, brickWidth, brickHeight); 
-        context.fillStyle = 'green';
-        context.fill();
-      }
+      context.beginPath();
+      bricks[i][j].draw();
+      context.closePath(); // 밖에써서 색상 변경은 x 하려면 for문안에
     }
   }
+  context.beginPath();
+  movingBrick.draw();
+  movingBrick.move();
   context.closePath(); // 밖에써서 색상 변경은 x 하려면 for문안에
+
+
 }
 
+//게임 시작
 function gameStart(){
   inputBrickColumn = prompt(" 행 ", "5")
   inputBrickRow = prompt(" 열 ", "5")
 }
 
+//공 시작 방향
 function ballDirInput(){
   
 }
@@ -257,7 +376,6 @@ function gameOver(){
 }
 
 setBricks();
-
 setInterval(draw, 10);
 
 
