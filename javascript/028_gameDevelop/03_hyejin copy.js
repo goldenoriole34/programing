@@ -1,23 +1,35 @@
-// 벽돌 배치 후 스페이스 바 누르면 공 발사 방향 결정
-
-var interval = setInterval( () => ( update ), 10);
-
 const canvas = document.getElementById('myCanvas'); 
 const context = canvas.getContext('2d');
-
-gameStart()
-
 
 // 벽돌 관련
 const brickWidth = 50 // 가로벽돌 간격 10
 const brickHeight = 25; // 세로 벽돌 간격 5
-var inputBrickColumn;
-let brickColumn = inputBrickColumn;  // 5행 세로로 
-var inputBrickRow;
-let brickRow = inputBrickRow ; // 5행 세로로 
+const brickColumn = 5; //밑에 먼저 숫자쓰고 그 다음 상수로 지정한다음 밑에 바꿨음.
+const brickRow = 5 ; // 4행 세로로 
 let bricks = []
 let countAliveBrick = brickColumn * brickRow; //남아있는 벽돌의 갯수
 let inputBrick;
+
+// 볼 관련
+let outBoundR = canvas.width / 2 + 50
+let outBoundL = canvas.width / 2 - 50
+
+const arcRadius = 20;
+let arcPosX = canvas.width / 2 + 100;  // 공 날아가는 방향
+let arcPosY = canvas.height / 2;
+let arcMovDirX = -1;
+let arcMovDirY = -1;
+let arcMovSpeed = 2.5;
+
+let ball = { 
+  left:0, right:0, top:0, bottom:0,
+};
+
+// 하나의 형태를 이렇게 할거라고 작성한 것.
+// let brick = {
+//   left:0, right:0, top:0, bottom:0,
+//   column:0, row:0,
+// }
 
 // 패들 관련
 const barWidth = 100;
@@ -26,27 +38,10 @@ let barPosX = canvas.width / 2 - barWidth / 2;
 let barPosY = canvas.height - barHeight;
 let barMovSpeed = 10;
 
-let ballDirL ;
-
 let paddle = {
   left:0, right:0, top:0, bottom:0,
 }
 
-// 볼 관련
-let outBoundR = canvas.width / 2 + 50
-let outBoundL = canvas.width / 2 - 50
-
-const arcRadius = 20;
-let arcPosX = barPosX + barWidth / 2;  // 공의 초기값
-let arcPosY = 400 - 20 - arcRadius;
-
-let arcMovDirX = -1;
-let arcMovDirY = -1;
-let arcMovSpeed = 2.5;
-
-let ball = { 
-  left:0, right:0, top:0, bottom:0,
-};
 
 // 키처리 함수 추가
 document.addEventListener('keydown', keyDownEventHandler);
@@ -69,10 +64,6 @@ function keyDownEventHandler(e)
     {
       barPosX -= barMovSpeed;
     }
-  }
-  else if (e.code == 'Space') {
-    setInterval(update, 10);
-
   }
 
   paddle.left = barPosX;
@@ -236,28 +227,22 @@ function drawBricks()
 }
 
 function gameStart(){
-  inputBrickColumn = prompt(" 행 ", "5")
-  inputBrickRow = prompt(" 열 ", "5")
-}
-
-function ballDirInput(){
-  
+  inputBrick = prompt("벽돌 갯수를 5개 단위로 입력하세요 ", "25")
 }
 
 function gameClear(){
   clearInterval(interval)
-  window.location.reload()
   alert("게임 클리어!")
 }
 
 function gameOver(){
   clearInterval(interval)
-  window.location.reload()
   alert("게임 오버!")
 }
 
+gameStart()
 setBricks();
-
+var interval = setInterval(update, 10);
 setInterval(draw, 10);
 
 
