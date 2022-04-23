@@ -1,3 +1,6 @@
+import { reject } from "lodash";
+import { resolve } from "path";
+
 // 맨 뒤에 있어야하는 친구
 var interval = setInterval( () => ( update ), 10);
 gameStart()
@@ -224,7 +227,8 @@ function update()
         
         //남은 brcik이 없을때, 게임 클리어
         if( countAliveBrick == 0 ) {
-          gameClear();
+          gameClear()
+          // reStart();
         }
         arcMovDirY = -arcMovDirY;
         arcMovDirX = -arcMovDirX;
@@ -365,8 +369,15 @@ function ballDirInput(){
 
 function gameClear(){
   clearInterval(interval)
+  setTimeout( ()=> {
+    return (
+      alert("게임 클리어!")
+    )
+  }, 100)
+}
+
+async function reStart(){
   window.location.reload()
-  alert("게임 클리어!")
 }
 
 function gameOver(){

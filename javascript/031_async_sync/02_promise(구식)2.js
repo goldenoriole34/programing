@@ -5,7 +5,7 @@ function asyncCheckAdult(age) {
   })
 }
 
-const promiseCheckAdult = asyncCheckAdult(10);
+const promiseCheckAdult = asyncCheckAdult(10); //checkPoint1
 
 promiseCheckAdult.then((age )=> {
   console.log(`${age} is adult!!`);
@@ -22,7 +22,7 @@ function asyncCheckAdult(age) {
   })
 }
 
-const promiseCheckAdult1 = asyncCheckAdult(21);
+const promiseCheckAdult1 = asyncCheckAdult(21); //checkPoint2
 
 promiseCheckAdult1.then((age )=> {
   console.log(`${age} is adult!!`);
