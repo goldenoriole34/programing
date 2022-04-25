@@ -1,6 +1,3 @@
-import { reject } from "lodash";
-import { resolve } from "path";
-
 // 맨 뒤에 있어야하는 친구
 var interval = setInterval( () => ( update ), 10);
 gameStart()
@@ -352,8 +349,6 @@ function drawBricks()
   movingBrick.draw();
   movingBrick.move();
   context.closePath(); // 밖에써서 색상 변경은 x 하려면 for문안에
-
-
 }
 
 //게임 시작
