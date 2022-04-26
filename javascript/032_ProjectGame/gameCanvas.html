@@ -7,8 +7,19 @@
   <title>Document</title>
 </head>
 <body>
-  <canvas width="600" height="600" id="gameFiled"></canvas>
-
+  <div style="display: flex;">
+    <canvas width="600" height="600" id="gameFiled"></canvas>
+    <div style="margin-left: 10px; font-size: 30px;">
+      <span id="hp" style="color: darkred;">hp</span> <br>
+      <span id="cash" style="color: darkgoldenrod;">cash</span>
+    </div>
+  </div>
+  <br>
+  <div id="battleButton">
+    <input id="가위" onclick="battle_RockPaperScissors(0)" type="submit" readonly value="가위" style="width: 180px; height: 50px; font-size: 30px;">
+    <input id="바위" onclick="battle_RockPaperScissors(1)" type="submit" readonly value="바위" style="width: 180px; height: 50px; font-size: 30px;">
+    <input id="보" onclick="battle_RockPaperScissors(2)" type="submit" readonly value="보" style="width: 180px; height: 50px; font-size: 30px;">
+  </div>
 
   <script src="./version02.js"></script>
 </body>
