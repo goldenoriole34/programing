@@ -14,19 +14,34 @@
   <script type="text/babel">
 
     class Form extends React.Component{
+
       state = {
         value : "",
       }
 
       handleChange = (e) => {
-        console.log(e.target.value) //input박스에 있는 value를 가리킴
+          console.log(e.target.value)//상태 value값이 아님 input의 value값임
+
+          this.setState({
+          ...this.state,
+          value : e.target.value 
+        })
+      }
+
+      handleSubmit = (e) => {
+        e.preventDefault()
+        console.log(this.state.value)
       }
 
       render(){
+        // const {state:{value}} = this
+
         return(
-          <form>
-            내용 : <input type="text" value={this.state.value} onChange={this.handleChange} />
-            <input type="submit" value="확인"/>
+          <form onSubmit={this.handleSubmit}>
+            내용 : <input type="text" value={this.state.value}  onChange={this.handleChange}/>
+            <input type="submit" value="확인" />
+            <h3>{this.state.value}</h3>
+            <h4>{this.props.color}</h4>
           </form>
         )
       }
@@ -36,23 +51,13 @@
       render(){
         return(
           <div>
-            <Form />
+            <Form color = {"red"}/>
           </div>
         )
       }
     }
 
     ReactDOM.render(<App />, document.querySelector("#root"));
-  </script>
-
-  <input type="text" id="heidi" onchange="changeHandle" />
-  <script type="text/javascript">
-    const input = document.querySelector('#heidi')
-
-    const handleChange = (e) => {
-      console.log(e.target.value)
-    }
-    input.addEventListener('change', changeHandle)
   </script>
 </body>
 </html>

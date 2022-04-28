@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+
+    class Form extends React.Component{
+
+      // state = { //form은 이제 state가 아닌 props만 받아 사용하므로 필요없어짐
+      //   value : "",
+      // }
+
+      handleChange = (e) => {
+        const {target:{value}} = e
+        this.props.change(value) //부모 컴포넌트가 보낸 함수가 props 들어오면 그것을 change값으로 변경함
+      }
+
+      handleSubmit = (e) => {
+        e.preventDefault()
+      }
+
+      render(){
+        const {
+          props:{
+            value
+          },
+          handleChange,
+          handleSubmit
+        } = this
+
+        return(
+          <form onSubmit={handleSubmit}>
+            내용 : <input type="text" value={value}  onChange={handleChange}/>
+            <input type="submit" value="확인" />
+          </form>
+        )
+      }
+    }
+    class Value extends React.Component {
+      render(){
+        return(
+          <h3>{this.props.value}</h3>
+        )
+      }
+    }
+
+    class App extends React.Component {
+
+      state = {
+        value : "",
+      }
+
+      changeValue = v => {
+        this.setState({
+          ...this.state,
+          value : v
+        })
+      }
+
+      
+
+      render(){
+        return(
+          <div>
+            <Form value={this.state.value} change={this.changeValue} />
+            <Value value={this.state.value} />
+          </div>
+        )
+      }
+    }
+
+    ReactDOM.render(<App />, document.querySelector("#root"));
+  </script>
+</body>
+</html>
