@@ -33,8 +33,9 @@
       
       list = this.state.board.map( (value, key) => {
         return(
-          <li>
+          <li key={key}>
             <span>{value.id}</span>
+            <span> : </span>
             <span>{value.subject}</span>
           </li>
         )
