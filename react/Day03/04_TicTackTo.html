@@ -67,49 +67,47 @@
   <div id="root"></div>
   <script type="text/babel">
 
-    //Square
-    //Board
-    //Game
-
     class Square extends React.Component {
-      state = {
-        value : null,
-      }
-
       render(){
         return(
-          <button className="square" onClick={ ()=>{ this.setState({value:'X'}) } }>
-            {this.state.value}
+          <button className="square"
+                  onClick={ ()=> { this.props.onClick() } }
+          >
+            {this.props.value}
           </button>
         )
       }
     }
 
     class Board extends React.Component {
-
-      state ={
-        squares : Array(9).fill(null)
+      state = {
+        squares : Array(9).fill(null), //9개의 null을 담은 배열생성
+        xIsNext : true,
       }
 
       handleClick = (i) => {
         const squares = [...this.state.squares]
 
-        squares[i] = 'X'
+        squares[i] = this.state.xIsNext ? 'X' : 'O'
 
-        this.setState({ squares })
-
+        this.setState({
+          squares,
+          xIsNext:!this.state.xIsNext
+        })
       }
 
 
       renderSquare = (i) => {
-        return <Square onClick={ () => {this.handleClick(i)} } />
+        return <Square
+                onClick={ () => {this.handleClick(i)} }
+                value={ this.state.squares[i] }
+              />
       }
 
       render(){
 
         return(
           <div>
-
             <div className="status"></div>
 
               <div className="board-row">
