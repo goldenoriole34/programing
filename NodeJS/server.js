@@ -9,10 +9,8 @@ const router = express.Router('./routes')
 app.use(router)
 
 app.use('/', (req, res, next) =>{
-
   // res.send('hello world!')
   next()
-
 })
 
 
@@ -20,9 +18,12 @@ app.get('/', (req, res) =>{
   res.send('hello world!')
 })
 
-app.get('/user', a)
+// app.get('/user', a)
 //url을 /user값을 입력하는 get이 들어올때까지 대기한다.
 
 app.listen(3000, ()=>{
   console.log("서버시작");
 })
+
+
+console.log(module.exports);
