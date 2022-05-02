@@ -34,7 +34,7 @@ const send = () => {
 
 name(send)
 
-//send 함수가 name이 실행되면 그때 send 실행하고 싶을 때
+// send 함수가 name이 실행되면 그때 send 실행하고 싶을 때
 // 선택적으로 call send가 실행되는 것을 원할때
 
 //위 예제가 이해가 안될떄, 아래를 공부해야하낟.
