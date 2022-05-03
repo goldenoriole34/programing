@@ -13,46 +13,68 @@
   <div id="root"></div>
   <script type="text/babel">
 
+
     class Form extends React.Component{
 
-      state = {
-        value : "",
-      }
+      // state = { //form은 이제 state가 아닌 props만 받아 사용하므로 필요없어짐
+      //   value : "",
+      // }
 
       handleChange = (e) => {
-          console.log(e.target.value)//상태 value값이 아님 input의 value값임
-
-          this.setState({
-          ...this.state,
-          value : e.target.value 
-        })
+        const {target:{value}} = e
+        this.props.change(value)  //부모 컴포넌트가 보낸 함수가 props 들어오면 그것을 change값으로 변경함
       }
 
       handleSubmit = (e) => {
         e.preventDefault()
-        console.log(this.state.value)
       }
 
       render(){
-        // const {state:{value}} = this
+        const {props:{
+          value
+        },
+        handleChange,
+        handleSubmit
+        } = this
 
         return(
-          <form onSubmit={this.handleSubmit}>
-            내용 : <input type="text" value={this.state.value}  onChange={this.handleChange}/>
+          <form onSubmit={handleSubmit}>
+            내용 : <input type="text" value={value}  onChange={handleChange}/>
             <input type="submit" value="확인" />
-            <h3>{this.state.value}</h3>
-            
-            <h4>{this.props.color}</h4>
           </form>
         )
       }
     }
 
-    class App extends React.Component {
+    class Value extends React.Component {
       render(){
         return(
           <div>
-            <Form color = {"red"}/>
+            <h1>{this.props.value}</h1>
+          </div>
+        )
+      }
+    }
+
+
+    class App extends React.Component {
+
+      state ={
+        value : "",
+      }
+
+      changeValue = (v) => {
+        this.setState ({
+          ...this.state,
+          value : v
+        })
+      }
+
+      render(){
+        return(
+          <div>
+            <Form vlaue ={this.state.value} change={this.changeValue}/>
+            <Value vlaue={this.state.value} />  
           </div>
         )
       }

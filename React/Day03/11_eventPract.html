@@ -13,18 +13,17 @@
   <div id="root"></div>
   <script type="text/babel">
 
-    class Form extends React.Component{
 
+    class Form extends React.Component {
       state = {
         value : "",
       }
 
       handleChange = (e) => {
-          console.log(e.target.value)//상태 value값이 아님 input의 value값임
-
-          this.setState({
+        console.log(e.target.value)
+        this.setState ({
           ...this.state,
-          value : e.target.value 
+          value : e.target.value
         })
       }
 
@@ -34,15 +33,12 @@
       }
 
       render(){
-        // const {state:{value}} = this
-
         return(
           <form onSubmit={this.handleSubmit}>
-            내용 : <input type="text" value={this.state.value}  onChange={this.handleChange}/>
+            내용 : <input type="text" value={this.state.value} onChange={this.handleChange} />
             <input type="submit" value="확인" />
-            <h3>{this.state.value}</h3>
-            
-            <h4>{this.props.color}</h4>
+            <h1>{this.state.value}</h1>
+            <h2>{this.props.color}</h2>
           </form>
         )
       }
@@ -51,9 +47,7 @@
     class App extends React.Component {
       render(){
         return(
-          <div>
-            <Form color = {"red"}/>
-          </div>
+          <Form color= {"red"}/>
         )
       }
     }
