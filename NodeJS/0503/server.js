@@ -5,13 +5,14 @@ const nunjucks = require('nunjucks')
 
 app.use(express.urlencoded({extended:true}))
 
-const list = [
-  
-]
 
 app.set('view engine', 'html')
 nunjucks.configure('views', {
   express:app,
+})
+
+app.get('/', (req, res)=>{
+  res.render('index')
 })
 
 app.use(router)
