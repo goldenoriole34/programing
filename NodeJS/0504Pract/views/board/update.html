@@ -8,15 +8,16 @@
 </head>
 <body>
   <h2>글 수정</h2>
-  <form method="post" action="http://localhost:3000/board/write">
+  <form method="post" action="/board/update">
     <label for="subject">제목</label>
     <input type="text" value="">
     <br>
-    <label for="content" name="content">내용</label>
-    <textarea name="content" cols="30" rows="1"></textarea>
+    <label for="name">내 이름은</label>
+    <input name="name" value="{{name}}"
+    <br>
+    <a href="/board/list">목록가기</a>
+    <input type="submit" value="저장하기"></form>
   </form>
 
-  <a href="/board/list">목록가기</a>
-  <a href="/board/update">저장</a>
 </body>
 </html>

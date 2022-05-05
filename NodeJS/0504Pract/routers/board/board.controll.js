@@ -1,13 +1,19 @@
 const list = (req, res) => {
-  res.render('board/list')
+  res.render('board/list'), {
+    name : req.query.name
+  }
 }
 
 const view = (req, res) => {
-  res.render('board/view')
+  res.render('board/view', {
+    name : req.query.name
+  })
 }
 
 const update = (req, res) => {
-  res.render('board/update')
+  res.render('board/update', {
+    name : req.query.name
+  })
 }
 
 const write = (req, res) => {
@@ -19,7 +25,7 @@ const writeAction = (req, res) => {
 }
 
 const updateAction = (req, res) => {
-  res.redirect('/board/view')
+  res.redirect(`/board/view?name=${req.body.name}`)
 }
 
 const deleteAction = (req, res) => {
