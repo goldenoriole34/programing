@@ -1,0 +1,1 @@
+UPDATE board SET subject="수정된 제목입니다" WHERE idx=1

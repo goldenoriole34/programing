@@ -25,7 +25,9 @@ const view = async (req, res) => {
 
 
 const update = (req, res) => {
-  res.render('board/update')
+  res.render('board/update', {
+    idx : req.query.idx
+  })
 }
 
 
@@ -37,25 +39,36 @@ const write = (req, res) => {
 const writeAction = async (req, res) => {
   const {subject, name, content } = req.body;
   try {
-    
     console.log(subject + name + content)
     await pool.query(`INSERT INTO board(subject, content, name) VALUES("${subject}", "${content}", "${name}")`)
+    res.redirect(`/board/list`)
 
-    res.redirect(`/board/view?idx={idx}`)
   } catch (e) {
     console.log('새 글 등록 실패!!')
   }
 }
 
-// UPDATE board SET subject='asdf' WHERE idx=1
-const updateAction = (req, res) => {
-  res.redirect(`/board/list`)
+
+const updateAction = async (req, res) => {
+  const { subject, name, content } = req.body;
+  const { idx } = req.query;
+  try{
+    // console.log("idx : " + idx + ", subject : " + subject + ", name : " + name + ", content : " + content)
+    await pool.query(`UPDATE board SET subject="${subject}", content="${content}", name="${name}" WHERE idx=${idx}`)
+    res.redirect(`/board/list`)
+  } catch (e) {
+    console.log('수정 내용 저장 실패!!')
+  }
 }
 
-const deleteAction = (req, res) => {
-  res.redirect(`/board/list`, {
-
-  })
+const deleteAction = async (req, res) => {
+  const { idx } = req.query;
+  try {
+    await pool.query(`DELETE FROM board WHERE idx=${idx}`)
+    res.redirect(`/board/list`)
+  } catch(e) {
+    console.log('삭제 실패!!')
+  }
 }
 
 
