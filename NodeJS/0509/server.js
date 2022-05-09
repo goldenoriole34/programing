@@ -37,10 +37,10 @@ app.get('/setCookie', (req, res) => {
 
   // res.sendHeader(`Set-Cookie`, 'name = heidi')
   // res.send('hello setCookie')
-  const time = 60
+  const time = 30;
   const date = new Date() //Expires로 쓸 경우
   res
-    .setHeader('Set-Cookie', 'name=heidi; httpOnly=true;')
+    .setHeader('Set-Cookie', 'name=heidi; httpOnly=true; Max-Age=30')
     .send('hello setCookie')
 })
 
