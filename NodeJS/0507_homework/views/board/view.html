@@ -7,6 +7,28 @@
   <title>view</title>
 </head>
 <body>
-  view
+  <h2>{{item.subject}}</h2>
+  <ul>
+    
+    <li>
+      <label>제목 : </label>
+      {{item.subject}}
+    </li>
+    
+    <li>
+      <labe>작성자 : </labe>
+      {{item.name}}
+    </li>
+
+    <li>
+      <label>내용 : </label>
+      {{item.content}}
+    </li>
+
+  </ul>
+
+  <a href="/board/list">목록가기</a>
+  <a href="/board/update?idx={{item.idx}}">수정</a>
+  <a href="/board/delete">삭제</a>
 </body>
 </html>
