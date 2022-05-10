@@ -1,6 +1,8 @@
 import axios from 'axios'
+import {useState} from 'react'
 
 const Index = () => {
+  const [value, setValue] = useState()
 
   const onClick = async () => {
     const result = await axios.get('http://localhost:3500')
