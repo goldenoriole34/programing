@@ -23,11 +23,24 @@
     }
 
     const App = () => {
-        return(
-          <div>
-            <ABC> 가나다 </ABC>
-          </div>
-      )
+      let [value, setValue] = React.useState('aaa');
+      console.log('helloworld')
+
+      React.useEffect( () => {
+        console.log('이게 언제 찍힐까?')
+      })
+
+      const handleClick = () => {
+        console.log('aaa')
+        setValue(2)
+      }
+
+      return(
+        <div>
+          {value}
+          <button onclick={handleClick}>클릭</button>
+        </div>
+    )
     }
 
     const root = ReactDOM.createRoot(document.querySelector('#root'));
