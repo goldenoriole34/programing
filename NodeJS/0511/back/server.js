@@ -40,6 +40,6 @@ app.post('/user/logout', (req, res) => {
   res.send('로그아웃 테스트')
 })
 
-app.listen(3500, () => {
-  console.log('3500 PORT ON')
+app.listen(3005, () => {
+  console.log('3005 port running')
 })

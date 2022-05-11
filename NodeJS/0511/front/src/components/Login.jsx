@@ -33,7 +33,7 @@ const Login = (props) => {
       <form onSubmit={handleSubmit} >
         <input type="text" name="userid" />
         <input type="password" name="userpw" />
-        <input type="submit" name="로그인" />
+        <input type="submit" value="로그인" />
       </form>
     </>
   )

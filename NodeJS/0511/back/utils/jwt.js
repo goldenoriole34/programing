@@ -1,22 +1,22 @@
 // const crypto = require('crypto-js')
 const crypto = require('crypto')
 
-// //header 
-// const header = {
-//   "alg": "HS256",
-//   "typ": "JWT"
-// }
-// //payload
-// const payload = {
-//   "sub": "1234567890",
-//   "name": "John Doe",
-//   "iat": 1516239022
-// }
+//header 
+const header = {
+  "alg": "HS256",
+  "typ": "JWT"
+}
+//payload
+const payload = {
+  "sub": "1234567890",
+  "name": "John Doe",
+  "iat": 1516239022
+}
 
 
-// //디코딩
-// // const decodingHeader = JSON.parse( Buffer.from( encodingHeader, 'base64').toString() )
-// // console.log("decodingHeader : "+ decodingHeader)
+//디코딩
+// const decodingHeader = JSON.parse( Buffer.from( encodingHeader, 'base64').toString() )
+// console.log("decodingHeader : "+ decodingHeader)
 
 // const encodingHeader =  Buffer.from( JSON.stringify(header))
 //                               .toString('base64')
