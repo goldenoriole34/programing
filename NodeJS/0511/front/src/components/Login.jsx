@@ -8,7 +8,7 @@ const Login = (props) => {
     const { userid, userpw } = e.target
     
     try {
-        const result = await axios.post('http://localhost:3500/user/login', {
+        const result = await axios.post('http://127.0.0.1:3500/user/login', {
         userid : userid.value,
         userpw : userpw.value
       }, {
@@ -37,6 +37,6 @@ const Login = (props) => {
       </form>
     </>
   )
-}
+}아니 잠만 진짜 조금만 ㄱㄷ
 
 export default Login

@@ -2,14 +2,15 @@
 const express = require('express')
 const app = express();
 const cors = require('cors')
-const createToken = require('./utils/jwt')
+// const createToken = require('./utils/jwt')
 
 app.use(express.urlencoded({extended : true}))
-app.use(express.json)
+app.use(express.json())
+
 
 app.use(cors({
   origin : true,
-  credentials : true
+  credentials : true,
 }))
 
 app.get('/', (req, res) => {
@@ -37,10 +38,18 @@ app.post('/user/login', (req, res) => {
   res.json(response)
 })
 
+app.post('/user/login', (req, res) => {
+  console.log(req.body)
+  res.send("dadadadaadad")
+  // res.json({
+  //   name : "heidi"
+  // })
+})
+
 app.post('/user/logout', (req, res) => {
   res.send('로그아웃 테스트')
 })
 
-app.listen(3005, () => {
-  console.log('3005 port running')
+app.listen(3500, () => {
+  console.log('3500 port running')
 })
