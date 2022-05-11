@@ -77,11 +77,8 @@ const createToken = (state) => {
 createToken( { name : 'ingoo', age : 33 } )
 
 
-console.log(createToken({name : 'ingoo'}))
-console.log(createToken({name : 'web7722'}))
-console.log(createToken({userid : 'web7722'}))
-
 
 //jwt토큰 만드는 함수 구현완료!!
 
-//
+
+module.exports = createToken
