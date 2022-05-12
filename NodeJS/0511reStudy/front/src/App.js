@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import Login from './components/Login'
-import Profile from './components/Profile';
+import Login from "./components/Login";
+import Profile from "./components/Profile";
 
 function App() {
 
@@ -9,13 +9,14 @@ function App() {
   const clickToggle = () => {
     setIsLogin(!isLogin)
   }
-  
+
   return (
     <>
-      { isLogin
-        ? <Profile onClick={clickToggle}  />
-        : <Login onClick={clickToggle} />
-      }
+    {
+      isLogin
+      ? <Profile onClick={clickToggle} />
+      : <Login onClick={clickToggle} />
+    }
     </>
   );
 }
