@@ -1,10 +1,9 @@
 // 웹에 명령어를 입력해서 내 노드를 제어하는 서버
-//const express = require('express')
 import express from 'express'
 import bodyParser from 'body-parser'
-import { getBlocks, createBlock } from './routers/block.js'
-import { connectionToPeer, getPeers, mineBlock } from './routers/p2pServer.js'
-import { getPublicKeyFromWallet } from './routers/wallet.js'
+import { getBlocks, createBlock } from './block.js'
+import { connectionToPeer, getPeers, mineBlock } from './p2pServer.js'
+import { getPublicKeyFromWallet } from './wallet.js'
 
 // 초기화 함수
 const initHttpServer = (myHttpPort) => {

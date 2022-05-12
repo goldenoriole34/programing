@@ -16,7 +16,7 @@ const getTransactionPool = () => {
 // 얕은 복사
 
 // let unspentTxOuts = []; // UnspentTxOut [] 사용되지 않은 트랜잭션
-let unspentTxOuts = processTransaction(transaction, [], 0);
+let unspentTxOuts = processTransaction(transaction /* Transaction[] */, [] /* UnspentTxout[] */, 0 /* blockIndex */); //  processTransaction() return하는 데이터는 UnspentTxOut[] 이다.
 const getUnspentTxOuts = () => {
     return _.cloneDeep(unspentTxOuts);
 }
