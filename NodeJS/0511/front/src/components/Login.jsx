@@ -22,6 +22,7 @@ const Login = (props) => {
         //promise 객체로 반환되니 asyne await 사용해야함
         // props.onClick()
         //back에 결과가 도착했을 때 가장 마지막에 실행
+        console.log(userid + userpw)
     } catch (e) {
       alert('접속불량')
     }
@@ -37,6 +38,6 @@ const Login = (props) => {
       </form>
     </>
   )
-}아니 잠만 진짜 조금만 ㄱㄷ
+}
 
 export default Login
