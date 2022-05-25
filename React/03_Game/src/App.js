@@ -39,19 +39,6 @@ function App() {
     setComputerSelect(computerChoice)
     setUserResult(judgementUser(choice[userChoice], computerChoice))
     setComputerResult(judgementComputer(choice[userChoice], computerChoice))
-    setUserClassName(judgementUser(choice[userChoice], computerChoice))
-    setComputerClassName()
-  }
-
-  const userBorderChange = () => {
-    if(userResult == "TIE")return "box_tie"
-    else if (userResult == "WIN") return "box_win"
-    else if (userResult == "LOSE") return "box_lose"
-  }
-  const computerBorderChange = () => {
-    if(computerResult == "TIE") return "box_tie"
-    else if (computerResult == "WIN") return "box_win"
-    else if (computerResult == "LOSE") return "box_lose"
   }
 
   const randomChoice = () =>{
