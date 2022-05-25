@@ -1,0 +1,26 @@
+.box {
+  border: 1px solid black;
+  width: 500px;
+}
+.box_win {
+  border: 1px solid green;
+  width: 500px;
+}
+.box_lose {
+  border: 1px solid red;
+  width: 500px;
+}
+.box_tie {
+  border: 1px solid black;
+  width: 500px;
+}
+
+.item-img {
+  width: 400px;
+}
+
+.main {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
