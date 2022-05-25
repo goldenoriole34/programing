@@ -1,0 +1,2 @@
+날씨 API 키
+0a68f54efd2a285fd30b91fb39ea9cc4
