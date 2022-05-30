@@ -1,24 +1,29 @@
 .login-button {
+  padding: 20px;
   display: flex;
   justify-content: flex-end;
-  margin: 20px;
+}
+.login-font{
+  margin-left: 10px;
+  cursor: pointer;
 }
 
-.nav-section {
+.logo-img{
   display: flex;
   justify-content: center;
+  padding: 40px;
 }
 
 .menu-area {
   display: flex;
   justify-content: center;
 }
-.menu-list{
+
+.menu-list {
   display: flex;
   list-style: none;
 }
 
 .menu-list li {
-  padding: 3vw;
+  padding: 20px;
 }
-
