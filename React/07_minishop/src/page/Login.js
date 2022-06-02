@@ -1,14 +1,16 @@
 import React from 'react'
 import {Container,Form, Button} from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
 
 const Login = ({setAuthenticate}) => {
 
   const navigate = useNavigate()
+  const dispatch = useDispatch()
   
   const onSubmit = (e) => {
     e.preventDefault()
-    setAuthenticate(true)
+    dispatch()
     navigate('/')
   }
   
