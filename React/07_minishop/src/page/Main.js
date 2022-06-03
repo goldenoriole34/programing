@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 const Main = () => {
 
-  const productList = useSelector( (state) => state.productList)
+  const productList = useSelector( (state) => state.product.productList)
   const [query, setQuery] = useSearchParams()
 
   const dispatch = useDispatch()
