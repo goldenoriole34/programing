@@ -9,7 +9,7 @@ import { useState } from 'react'
 import PrivateRouter from './route/PrivateRouter';
 
 function App() {
-  const [authenticate, setAuthenticate] = useState('false')
+  const [authenticate, setAuthenticate] = useState(false)
 
   return (
     <>
