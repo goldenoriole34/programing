@@ -19,9 +19,14 @@ staff_id_5 = str("매니저ll잔향")
 
 
 def pandoraMacro() :
+    # hadless 옵션 추가(back에서 매크로 돌리기)
     options = webdriver.ChromeOptions()
-    options.add_argument("headless")
+    # options.headless = True
+    # options.add_argument("window-size=1440x900")
+    # options.add_argument("user-agent=Mozilla/5.0 (Linux; Android 9; SM-G975F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.83 Mobile Safari/537.36")
+    # options.add_argument("headless")
     driver = webdriver.Chrome() # 현재파일과 동일한 경로일 경우 생략 가능
+    driver.minimize_window()
 
     # 1. 판도라 카페 이동
     driver.get('https://cafe.naver.com/lovelymate1004')
