@@ -1,0 +1,38 @@
+.login-button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1vw;
+}
+
+.nav-section {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-area {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu-list li {
+    padding: 2.5vw;
+}
+
+.searchbar {
+    position: absolute;
+    right: 20px;
+    border-bottom: 3px solid rgba(17, 15, 15, 0.644);
+}
+
+.search-icon {
+    padding : 5px
+}
+
+.searchbar input{
+    border: none;
+}
