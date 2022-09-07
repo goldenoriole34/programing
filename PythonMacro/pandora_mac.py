@@ -101,13 +101,15 @@ def go_welcome() :
     element03 = driver.find_element(By.ID, "cafe_main")
     driver.switch_to.frame(element03)
     time.sleep(1)
+    driver.switch_to.default_content()
   
     # 답글 클릭
     driver.switch_to.frame(element01)
-    time.sleep(1)
-    makeReply = driver.find_element(By.XPATH,"/html/body/div/div/div/div[3]/div[1]/a[2]")    
+    time.sleep(3)
+    makeReply = driver.find_element(By.XPATH,"/html/body/div/div/div/div[3]/div[1]/a[2]/span")    
     makeReply.click()
-    #time.sleep(3)
+    print("답글 버튼 ")
+    time.sleep(3)
     #driver.switch_to.default_content()
 
     # 답글 생성 탭으로 이동

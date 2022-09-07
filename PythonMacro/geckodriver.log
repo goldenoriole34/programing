@@ -2132,3 +2132,585 @@ TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
 TimedPromise@chrome://remote/content/marionette/sync.js:222:10
 interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
 webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1660661778806	geckodriver	INFO	Listening on 127.0.0.1:61416
+1660661779324	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "61417" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofileWmRil0"
+2022-08-16 23:56:22.033 plugin-container[11382:523561] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-16 23:56:22.033 plugin-container[11382:523561] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://localhost:61417
+2022-08-16 23:56:22.135 plugin-container[11382:523561] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-16 23:56:22.135 plugin-container[11382:523561] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-16 23:56:22.136 plugin-container[11382:523565] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-16 23:56:22.136 plugin-container[11382:523565] nil host used in call to allowsAnyHTTPSCertificateForHost:
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://localhost:61417/devtools/browser/77520999-1cd3-4fb8-9616-4399379c1b74
+1660661845991	geckodriver	INFO	Listening on 127.0.0.1:61471
+1660661846509	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "61472" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofileqocF8e"
+2022-08-16 23:57:26.817 plugin-container[11440:524845] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-16 23:57:26.818 plugin-container[11440:524845] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-16 23:57:26.828 plugin-container[11440:524845] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-16 23:57:26.828 plugin-container[11440:524845] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-16 23:57:26.828 plugin-container[11440:524849] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-16 23:57:26.828 plugin-container[11440:524849] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660661846830	Marionette	INFO	Marionette enabled
+1660661846935	Marionette	INFO	Listening on port 61477
+WebDriver BiDi listening on ws://localhost:61472
+Read port: 61477
+1660661847087	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofileqocF8e/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61472/devtools/browser/c8111bd5-284d-4479-83f1-06a4a86787b2
+1660661847660	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660661850643	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1660661850666	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 89: unreachable code after return statement
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 134: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cafe.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660663909139	geckodriver	INFO	Listening on 127.0.0.1:61763
+1660663909658	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "61764" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofilec2SarY"
+2022-08-17 00:31:49.955 plugin-container[11605:533089] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:31:49.955 plugin-container[11605:533089] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660663909966	Marionette	INFO	Marionette enabled
+1660663909988	Marionette	INFO	Listening on port 61769
+WebDriver BiDi listening on ws://localhost:61764
+2022-08-17 00:31:49.993 plugin-container[11605:533089] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:31:49.993 plugin-container[11605:533089] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-17 00:31:49.993 plugin-container[11605:533087] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:31:49.993 plugin-container[11605:533087] nil host used in call to allowsAnyHTTPSCertificateForHost:
+Read port: 61769
+1660663910140	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofilec2SarY/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61764/devtools/browser/cfe8f431-f8d4-4d4e-ae7f-350febbd188f
+1660663910694	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660663913643	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1660663913666	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 89: unreachable code after return statement
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 134: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cafe.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660664097597	Marionette	INFO	Stopped listening on port 61477
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1660664099820	Marionette	INFO	Stopped listening on port 61769
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1660664111777	geckodriver	INFO	Listening on 127.0.0.1:61872
+1660664112295	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "61873" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofileks4UbI"
+2022-08-17 00:35:12.576 plugin-container[11670:535349] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:35:12.576 plugin-container[11670:535349] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-17 00:35:12.579 plugin-container[11670:535349] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:35:12.579 plugin-container[11670:535349] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-17 00:35:12.579 plugin-container[11670:535347] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:35:12.579 plugin-container[11670:535347] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660664112586	Marionette	INFO	Marionette enabled
+1660664112603	Marionette	INFO	Listening on port 61878
+WebDriver BiDi listening on ws://localhost:61873
+Read port: 61878
+1660664112684	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofileks4UbI/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61873/devtools/browser/d0c5bdd1-9b30-4dab-8fcf-e2b78b286346
+1660664113277	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660664116317	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1660664116351	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 89: unreachable code after return statement
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 134: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cafe.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+2022-08-17 00:37:38.506 firefox-bin[11669:535283] TSM AdjustCapsLockLEDForKeyTransitionHandling - _ISSetPhysicalKeyboardCapsLockLED Inhibit
+1660664568636	geckodriver	INFO	Listening on 127.0.0.1:61992
+1660664569153	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "61993" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofileep5aMw"
+2022-08-17 00:42:49.440 plugin-container[11788:539664] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:42:49.440 plugin-container[11788:539664] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-17 00:42:49.442 plugin-container[11788:539664] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:42:49.442 plugin-container[11788:539664] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-17 00:42:49.442 plugin-container[11788:539688] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:42:49.442 plugin-container[11788:539688] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660664569449	Marionette	INFO	Marionette enabled
+1660664569468	Marionette	INFO	Listening on port 61998
+WebDriver BiDi listening on ws://localhost:61993
+Read port: 61998
+1660664569625	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofileep5aMw/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61993/devtools/browser/cdc9cb1e-92f5-44c1-b02e-bb00c5eb55d6
+1660664570221	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660664573198	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1660664573225	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 89: unreachable code after return statement
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 134: unreachable code after return statement
+2022-08-17 00:43:11.030 firefox-bin[11787:539598] TSM AdjustCapsLockLEDForKeyTransitionHandling - _ISSetPhysicalKeyboardCapsLockLED Inhibit
+1660664662444	geckodriver	INFO	Listening on 127.0.0.1:62069
+1660664662963	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "62070" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofileFYcL8t"
+2022-08-17 00:44:23.244 plugin-container[11833:541084] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:44:23.244 plugin-container[11833:541084] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660664663254	Marionette	INFO	Marionette enabled
+2022-08-17 00:44:23.272 plugin-container[11833:541084] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:44:23.272 plugin-container[11833:541084] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-17 00:44:23.272 plugin-container[11833:541111] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:44:23.272 plugin-container[11833:541111] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660664663356	Marionette	INFO	Listening on port 62075
+WebDriver BiDi listening on ws://localhost:62070
+Read port: 62075
+1660664663407	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofileFYcL8t/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:62070/devtools/browser/952c8492-0686-498e-8a03-868bda572343
+1660664664091	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660664667052	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1660664667079	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 89: unreachable code after return statement
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 134: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cafe.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660664758381	Marionette	INFO	Stopped listening on port 61878
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1660664761216	Marionette	INFO	Stopped listening on port 61998
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1660664763298	Marionette	INFO	Stopped listening on port 62075
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1660664767991	geckodriver	INFO	Listening on 127.0.0.1:62242
+1660664768511	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "62243" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofilezgWYAs"
+2022-08-17 00:46:08.816 plugin-container[11884:543031] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:46:08.816 plugin-container[11884:543031] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660664768826	Marionette	INFO	Marionette enabled
+2022-08-17 00:46:08.845 plugin-container[11884:543031] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:46:08.845 plugin-container[11884:543031] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-17 00:46:08.846 plugin-container[11884:543028] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:46:08.846 plugin-container[11884:543028] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660664768929	Marionette	INFO	Listening on port 62248
+Read port: 62248
+WebDriver BiDi listening on ws://localhost:62243
+1660664768982	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofilezgWYAs/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:62243/devtools/browser/e2400776-1002-4b88-8ffd-adcfbbd92e1f
+1660664769628	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660664772613	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1660664772644	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 89: unreachable code after return statement
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 134: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cafe.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660664779750	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1660664814278	geckodriver	INFO	Listening on 127.0.0.1:62348
+1660664814282	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "62349" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofileQ803fW"
+2022-08-17 00:46:54.521 plugin-container[11907:543730] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:46:54.521 plugin-container[11907:543730] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-17 00:46:54.523 plugin-container[11907:543730] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:46:54.523 plugin-container[11907:543730] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-17 00:46:54.523 plugin-container[11907:543738] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:46:54.523 plugin-container[11907:543738] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660664814531	Marionette	INFO	Marionette enabled
+1660664814547	Marionette	INFO	Listening on port 62352
+WebDriver BiDi listening on ws://localhost:62349
+Read port: 62352
+1660664814670	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofileQ803fW/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:62349/devtools/browser/4dd47339-8992-4984-b604-a453f33936f7
+1660664815219	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660664818172	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1660664818195	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 89: unreachable code after return statement
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 134: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cafe.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660664822562	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'loading'.
+1660664825210	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1660664852086	geckodriver	INFO	Listening on 127.0.0.1:62433
+1660664852089	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "62434" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofilelKfnzf"
+2022-08-17 00:47:32.325 plugin-container[11919:544326] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:47:32.325 plugin-container[11919:544326] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-17 00:47:32.327 plugin-container[11919:544326] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:47:32.327 plugin-container[11919:544326] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-17 00:47:32.327 plugin-container[11919:544333] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:47:32.327 plugin-container[11919:544333] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660664852336	Marionette	INFO	Marionette enabled
+1660664852352	Marionette	INFO	Listening on port 62437
+WebDriver BiDi listening on ws://localhost:62434
+Read port: 62437
+1660664852438	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofilelKfnzf/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:62434/devtools/browser/2576babd-45d5-4eff-884d-57898eca7397
+1660664853057	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660664855997	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1660664856027	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 89: unreachable code after return statement
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 134: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cafe.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660664886744	geckodriver	INFO	Listening on 127.0.0.1:62532
+1660664886748	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "62533" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofileV3tkhB"
+2022-08-17 00:48:07.016 plugin-container[11939:545035] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:48:07.016 plugin-container[11939:545035] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-17 00:48:07.018 plugin-container[11939:545035] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:48:07.018 plugin-container[11939:545035] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-17 00:48:07.019 plugin-container[11939:545040] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:48:07.019 plugin-container[11939:545040] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660664887027	Marionette	INFO	Marionette enabled
+1660664887044	Marionette	INFO	Listening on port 62536
+WebDriver BiDi listening on ws://localhost:62533
+Read port: 62536
+1660664887128	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofileV3tkhB/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:62533/devtools/browser/6ca5d0c5-c938-46fe-ae27-cc1153e81767
+1660664887845	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660664890783	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1660664890810	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 89: unreachable code after return statement
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 134: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cafe.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660664897885	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 89: unreachable code after return statement
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 134: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cafe.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 89: unreachable code after return statement
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 134: unreachable code after return statement
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 89: unreachable code after return statement
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 134: unreachable code after return statement
+1660664941721	Marionette	INFO	Stopped listening on port 62248
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1660664944014	Marionette	INFO	Stopped listening on port 62352
+1660664946063	Marionette	INFO	Stopped listening on port 62437
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1660664949279	Marionette	INFO	Stopped listening on port 62536
+1660664970926	geckodriver	INFO	Listening on 127.0.0.1:62659
+1660664971444	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "62660" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofileCQ3SCM"
+2022-08-17 00:49:31.747 plugin-container[11971:546269] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:49:31.747 plugin-container[11971:546269] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660664971756	Marionette	INFO	Marionette enabled
+2022-08-17 00:49:31.775 plugin-container[11971:546269] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:49:31.775 plugin-container[11971:546269] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-17 00:49:31.775 plugin-container[11971:546274] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:49:31.775 plugin-container[11971:546274] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660664971859	Marionette	INFO	Listening on port 62665
+Read port: 62665
+WebDriver BiDi listening on ws://localhost:62660
+1660664971910	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofileCQ3SCM/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:62660/devtools/browser/42d905d8-a8c1-4ce1-a275-6221f8b22fe9
+1660664972509	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660664975420	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1660664975445	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 89: unreachable code after return statement
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 134: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cafe.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660664983476	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1660665001044	geckodriver	INFO	Listening on 127.0.0.1:62744
+1660665001049	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "62745" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofile7Ax08L"
+2022-08-17 00:50:01.287 plugin-container[11982:546841] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:50:01.287 plugin-container[11982:546841] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-17 00:50:01.289 plugin-container[11982:546841] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:50:01.289 plugin-container[11982:546841] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-17 00:50:01.290 plugin-container[11982:546866] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:50:01.290 plugin-container[11982:546866] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660665001296	Marionette	INFO	Marionette enabled
+1660665001312	Marionette	INFO	Listening on port 62748
+WebDriver BiDi listening on ws://localhost:62745
+Read port: 62748
+1660665001438	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofile7Ax08L/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:62745/devtools/browser/d5ca6746-c24a-42b9-b2cb-260711d7e715
+1660665002062	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660665004999	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1660665005025	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 89: unreachable code after return statement
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 134: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cafe.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660665013110	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1660665036784	geckodriver	INFO	Listening on 127.0.0.1:62833
+1660665036789	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "62834" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofileWKNCcn"
+2022-08-17 00:50:37.044 plugin-container[12007:547616] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:50:37.045 plugin-container[12007:547616] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-17 00:50:37.047 plugin-container[12007:547616] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:50:37.047 plugin-container[12007:547616] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-17 00:50:37.047 plugin-container[12007:547619] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:50:37.047 plugin-container[12007:547619] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660665037055	Marionette	INFO	Marionette enabled
+1660665037071	Marionette	INFO	Listening on port 62837
+WebDriver BiDi listening on ws://localhost:62834
+Read port: 62837
+1660665037151	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofileWKNCcn/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:62834/devtools/browser/874a6461-bcef-4fd8-9cd6-25f5c77391d5
+1660665037746	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660665040683	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1660665040708	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 89: unreachable code after return statement
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 134: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cafe.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660665048787	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1660665068827	geckodriver	INFO	Listening on 127.0.0.1:62922
+1660665068832	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "62923" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofilek0t5zK"
+2022-08-17 00:51:09.107 plugin-container[12024:548241] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:51:09.108 plugin-container[12024:548241] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-17 00:51:09.110 plugin-container[12024:548241] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:51:09.110 plugin-container[12024:548241] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-17 00:51:09.110 plugin-container[12024:548265] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:51:09.110 plugin-container[12024:548265] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660665069117	Marionette	INFO	Marionette enabled
+1660665069133	Marionette	INFO	Listening on port 62926
+WebDriver BiDi listening on ws://localhost:62923
+Read port: 62926
+1660665069218	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofilek0t5zK/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:62923/devtools/browser/98ad4c00-7502-4c36-9490-a27d0ee054e2
+1660665069829	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660665072741	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1660665072768	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 89: unreachable code after return statement
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 134: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cafe.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660665077278	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'loading'.
+1660665083883	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 89: unreachable code after return statement
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 134: unreachable code after return statement
+1660665093155	Marionette	INFO	Stopped listening on port 62665
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1660665095387	Marionette	INFO	Stopped listening on port 62748
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1660665099467	Marionette	INFO	Stopped listening on port 62837
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1660665101799	Marionette	INFO	Stopped listening on port 62926
+1660665108379	geckodriver	INFO	Listening on 127.0.0.1:63017
+1660665108383	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "63018" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofileXRnqOB"
+2022-08-17 00:51:48.652 plugin-container[12036:548873] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:51:48.652 plugin-container[12036:548873] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660665108660	Marionette	INFO	Marionette enabled
+2022-08-17 00:51:48.679 plugin-container[12036:548873] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:51:48.679 plugin-container[12036:548873] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-17 00:51:48.679 plugin-container[12036:548899] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:51:48.679 plugin-container[12036:548899] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660665108763	Marionette	INFO	Listening on port 63021
+WebDriver BiDi listening on ws://localhost:63018
+Read port: 63021
+1660665108815	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofileXRnqOB/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63018/devtools/browser/23b9e059-0dd5-4f75-865d-f4074f412c00
+1660665109439	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660665112345	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1660665112368	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 89: unreachable code after return statement
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 134: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cafe.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660665124056	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1660665383175	geckodriver	INFO	Listening on 127.0.0.1:63218
+1660665383180	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "63219" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofileDv5Jr3"
+2022-08-17 00:56:23.453 plugin-container[12117:552097] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:56:23.453 plugin-container[12117:552097] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660665383461	Marionette	INFO	Marionette enabled
+2022-08-17 00:56:23.476 plugin-container[12117:552097] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:56:23.476 plugin-container[12117:552097] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-17 00:56:23.476 plugin-container[12117:552099] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:56:23.476 plugin-container[12117:552099] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660665383564	Marionette	INFO	Listening on port 63222
+WebDriver BiDi listening on ws://localhost:63219
+Read port: 63222
+1660665383616	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofileDv5Jr3/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63219/devtools/browser/3866b8b7-1f91-4bb3-ae26-457e8850edab
+1660665384256	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660665387175	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1660665387199	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 89: unreachable code after return statement
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 134: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cafe.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660665396347	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1660665504958	geckodriver	INFO	Listening on 127.0.0.1:63330
+1660665505477	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "63331" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofile8ukJyK"
+1660665505788	Marionette	INFO	Marionette enabled
+2022-08-17 00:58:25.796 plugin-container[12162:553855] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:58:25.797 plugin-container[12162:553855] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-17 00:58:25.814 plugin-container[12162:553855] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:58:25.814 plugin-container[12162:553855] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-17 00:58:25.814 plugin-container[12162:553860] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-17 00:58:25.814 plugin-container[12162:553860] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660665505891	Marionette	INFO	Listening on port 63336
+WebDriver BiDi listening on ws://localhost:63331
+Read port: 63336
+1660665505943	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/fd/3q44trcn14sb33fpbtbsnsth0000gn/T/rust_mozprofile8ukJyK/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63331/devtools/browser/04743094-b4b6-4ed3-ba89-53da1d45ba38
+1660665506624	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://nid.naver.com/login/js/bvsd.1.3.5.min.js, line 21: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://nid.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660665509540	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1660665509565	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 89: unreachable code after return statement
+JavaScript warning: https://cafe.naver.com/static/js/mycafe/common/storyphoto/original_viewer-1644284985000-41853.js, line 134: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cafe.naver.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1660665518724	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:237:24
+TimedPromise@chrome://remote/content/marionette/sync.js:222:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1660665530306	Marionette	INFO	Stopped listening on port 63021
+1660665532465	Marionette	INFO	Stopped listening on port 63222
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1660665534427	Marionette	INFO	Stopped listening on port 63336
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
